@@ -1,0 +1,57 @@
+name: r5edu
+
+channels:
+  - conda-forge
+  - r
+
+dependencies:
+  - python=3.10
+  - access
+  - contextily
+  - cykhash=2.0.0
+  - dash
+  - folium
+  - geopandas
+  - geoplot
+  - geopy
+  - git
+  - hvplot
+  - jupyterlab=3.0.6
+  - jupyterlab-git
+  - mamba
+  - mapclassify
+  - matplotlib
+  - momepy
+  - movingpandas
+  - networkx
+  - osmnx
+  - pandana
+  - pandas
+  - plotly_express
+  - pyrosm
+  - pysal
+  - python-igraph
+  - r5py
+  - r-checkmate
+  - r-codetools
+  - r-data.table
+  - r-devtools
+  - r-ggplot2
+  - r-irkernel
+  - r-lattice
+  - r-raster
+  - r-rjava
+  - r-sf
+  - r-sfheaders
+  - r-sp
+  - r-terra
+  - r-units
+  - scikit-learn
+  - scikit-mobility
+  - scipy
+  - segregation
+  - spaghetti
+  - splot
+  - spreg
+  - tqdm
+  - urbanaccess
