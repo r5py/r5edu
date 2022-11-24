@@ -39,7 +39,6 @@ dependencies:
   - r-irkernel
   - r-lattice
   - r-raster
-  - r-rjava
   - r-sf
   - r-sfheaders
   - r-sp
