@@ -2,7 +2,6 @@ name: r5edu
 
 channels:
   - conda-forge
-  - r
 
 dependencies:
   - python=3.10
