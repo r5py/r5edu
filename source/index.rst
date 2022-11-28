@@ -1,6 +1,6 @@
 .. figure:: img/Sustainable_mobility_banner.png
 
-*Workshop*: **Open tools for large-scale spatial accessibility analysis in Python and R** The workshop deals with the use open-source tools in Python (r5py) and R (r5r) to study spatial
+*Workshop*: **Open tools for large-scale spatial accessibility analysis in Python and R** deals with the use open-source tools in Python (r5py) and R (r5r) to study spatial
 accessibility in urban environments.
 
 After participating in the event:
@@ -25,7 +25,7 @@ Program
 
 The planned schedule for the event:
 
-.. figure:: ../img/schedule.png
+.. figure:: img/schedule.png
 
 Contents
 --------
@@ -42,12 +42,23 @@ Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Day 1
+   :caption: Presentations
 
-   lessons/L1/giscience-and-sustainable-mobility
-   lessons/L1/git-basics
+   lessons/giscience-and-sustainable-mobility
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Tutorials
+
+   lessons/giscience-and-sustainable-mobility
+   lessons/git-basics
    notebooks/intro-to-python-geostack.ipynb
    notebooks/spatial_network_analysis.ipynb
-   notebooks/exercise-1
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Exercises
+
+   exercises/exercise-1
 
 
