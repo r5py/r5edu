@@ -120,14 +120,14 @@ and executing the following command in the directory where you downloaded the `.
 
 .. code-block::
 
-    conda activate geo
+    conda activate r5
 
 You should now see the name of the environment at the start of the command line.
 
 3. Launch JupyterLab IDE
 
 After you have installed all required packages, you can start working in a local Jupyter Lab environment that is
-linked to your ``geo`` conda environment by launching jupyter lab on the command line.
+linked to your ``r5`` conda environment by launching jupyter lab on the command line.
 
 It's a good idea to first navigate to the folder where your Jupyter Notebook -files are located before launching Jupyter Lab.
 
@@ -162,7 +162,7 @@ On Windows, you need to do a bit of manual work to get OpenJDK working. Follow t
 7. Once you have the command prompt open in admin mode, type ``setx -m JAVA_HOME "C:\Program Files\Java\jdk-11\bin"`` which will create an environment variable called ``JAVA_HOME`` for your computer which points to the folder where we copied the ``jdk-11``.
 8. Close the command prompt
 9. Open ``Anaconda Prompt (miniconda)`` from the start menu
-10. Activate the ``geo`` environment by typing ``conda activate geo``
+10. Activate the ``r5`` environment by typing ``conda activate r5``
 11. Run command ``python -c "import r5py"``. If this does not produce any errors, everything works!
 
 Linux/Mac
@@ -170,10 +170,10 @@ Linux/Mac
 
 On Linux and Mac, getting the OpenJDK working is slightly easier ...
 
-1. Activate the ``geo`` environment by typing ``conda activate geo`` in a terminal
+1. Activate the ``r5`` environment by typing ``conda activate r5`` in a terminal
 2. Install the ``openjdk`` by typing ``mamba install -c conda-forge openjdk=>17.0.3``
 3. Close the terminal. Open the terminal again.
-4. Activate the ``geo`` environment by typing ``conda activate geo``
+4. Activate the ``r5`` environment by typing ``conda activate r5``
 5. Run command ``python -c "import r5py"``. If this does not produce any errors, everything works!
 
 General guide for installing packages with Mamba/Conda
