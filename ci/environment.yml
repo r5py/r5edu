@@ -1,4 +1,4 @@
-name: r5edu
+name: r5
 
 channels:
   - conda-forge
@@ -23,6 +23,7 @@ dependencies:
   - momepy
   - movingpandas
   - networkx
+  - openjdk=11.0.1
   - osmnx
   - pandana
   - pandas
