@@ -1,9 +1,10 @@
-Install Python + libraries
-==========================
+Install Python + R libraries
+============================
 
-The purpose of this page is to help you to install Python and different Python packages into your own computer.
-Even though it is possible to install Python from the `Python homepage <https://www.python.org/>`_, **we highly recommend using** `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ to install Python.
-Miniconda comes with Python and a small number of essential packages.
+The purpose of this page is to help you to install Python, R and different Python+R packages into your own computer. After completing these instructions, you will have an environment that contain both Python and R libraries which are needed to run the tutorials for Python and R (you can test both!)
+
+For installing the packages, **we highly recommend using** `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ to install Python and R.
+Miniconda comes with Python and a small number of essential packages that can be used to install additional libraries and software, such as R.
 Additional packages can be installed using the package management systems `mamba <https://mamba.readthedocs.io/en/latest/index.html>`_ or `conda <https://docs.conda.io/en/latest/>`__.
 Both offer similar functionality, but we suggest using mamba because it is significantly faster for installing the libraries needed for using Python for GIS.
 
@@ -66,15 +67,15 @@ Install Miniconda 3 and add it to system path using Terminal:
     # Add following line at the end of the file and save (EDIT ACCORDING YOUR INSTALLATION PATH)
     export PATH=$PATH:/PATH_TO_MINICONDA/miniconda3/bin:/PATH_TO_MINICONDA/miniconda3/lib/python3.8/site-packages
 
-Install the course environment
-------------------------------
+Install the programming environment
+-----------------------------------
 
-Installing various GIS packages in Python can be sometimes a bit tricky due to various dependencies
+Installing various GIS packages (especially in Python) can be sometimes a bit tricky due to various dependencies
 between the packages. Sometimes an older version of the package, or even an older Python version might be required for a
 specific tool to work. The recommended way to get the installation working smoothly is to **create a dedicated
-Python environment** for the selected Python packages (e.g. for the ones used during this course).
-A python environment is a separate installation including all required libraries as well as
-the Python interpreter. It is a good practice to install all packages (if possible) from the same
+virtual environment** for the selected Python+R packages (e.g. for the ones used during this workshop).
+A virtual environment is a separate installation including all required libraries as well as
+the Python and R interpreters. It is a good practice to install all packages (if possible) from the same
 conda channel (e.g. ``conda-forge`` which we recommend), and not to mix conda and pip for installations
 if not strictly necessary.
 
@@ -103,7 +104,7 @@ After installing `mamba`, the main steps for creating and using a conda environm
 2. activate the environment
 3. start using the environment (e.g. launch the JupyterLab and start coding, see below)
 
-We have prepared a ready-made environment file for this course (called ``environment_mini.yml``). You can  `DOWNLOAD IT FROM HERE <https://github.com/htenkanen/mobility-course/blob/main/ci/environment_mini.yml>`__.
+We have prepared a ready-made environment file for this course (called ``environment.yml``). You can  `DOWNLOAD IT FROM HERE <https://github.com/r5py/r5edu/blob/main/ci/environment.yml>`__.
 After downloading the environment file, run the following commands on the same folder where you downloaded it.
 If you don't know how to navigate between different folders, check these short tutorials for `terminal <https://riptutorial.com/terminal/example/26023/basic-navigation-commands>`_ and `command prompt (Windows) <https://riptutorial.com/cmd/example/8646/navigating-in-cmd>`_.
 The commands below work similarly in all operating systems where you have Miniconda (or Anaconda) installed:
@@ -145,7 +146,7 @@ Note, Jupyter Lab will probably prompt you to "Build" the installation in order 
 Install OpenJDK Java Development Kit
 ------------------------------------
 
-``r5py`` library relies on Java JDK engine. Hence to get the ``r5py`` working, you need to install OpenJDK to your computer.
+``r5py`` and ``r5r`` libraries rely on Java JDK engine. Hence to get the libraries working, you need to install OpenJDK to your computer.
 Below are instructions how to do that.
 
 Windows
