@@ -9,6 +9,7 @@ dependencies:
   - contextily
   - cykhash=2.0.0
   - dash
+  - elevation
   - folium
   - geopandas
   - geoplot
@@ -32,19 +33,26 @@ dependencies:
   - pysal
   - python-igraph
   - r5py
+  - rasterio
+  - rioxarray
   - r-checkmate
   - r-codetools
   - r-data.table
   - r-devtools
   - r-ggplot2
+  - r-geojsonio
   - r-irkernel
   - r-lattice
+  - r-mapview
+  - r-osmdata
   - r-raster
   - r-rjava
   - r-sf
   - r-sfheaders
   - r-sp
   - r-terra
+  - r-tidygeocoder
+  - r-tmap
   - r-units
   - scikit-learn
   - scikit-mobility
@@ -55,3 +63,4 @@ dependencies:
   - spreg
   - tqdm
   - urbanaccess
+  - xarray
