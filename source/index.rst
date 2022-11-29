@@ -32,7 +32,7 @@ Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Course information
+   :caption: Basic information
 
    course-info/introduction
    course-info/installing-miniconda
@@ -44,16 +44,25 @@ Contents
    :maxdepth: 1
    :caption: Presentations
 
-   lessons/giscience-and-sustainable-mobility
+   .. lessons/giscience-and-sustainable-mobility
 
 .. toctree::
    :maxdepth: 1
    :caption: Tutorials
 
+   notebooks/r5py_intro.ipynb
+   notebooks/r5r_intro.ipynb
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Extra materials
+
    lessons/giscience-and-sustainable-mobility
    lessons/git-basics
    notebooks/intro-to-python-geostack.ipynb
-   notebooks/spatial_network_analysis.ipynb
+   notebooks/popgrid_to_points.ipynb
+   notebooks/download_poi_data_for_Brighton.ipynb
+   notebooks/download_elevation_data_python.ipynb
 
 .. toctree::
    :maxdepth: 1
