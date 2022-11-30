@@ -48,6 +48,12 @@ Contents
 
 .. toctree::
    :maxdepth: 1
+   :caption: Demo
+
+   notebooks/demo/r5py_demo.ipynb
+
+.. toctree::
+   :maxdepth: 1
    :caption: Tutorials
 
    notebooks/r5py_intro.ipynb
@@ -59,10 +65,10 @@ Contents
 
    lessons/giscience-and-sustainable-mobility
    lessons/git-basics
-   notebooks/intro-to-python-geostack.ipynb
-   notebooks/popgrid_to_points.ipynb
-   notebooks/download_poi_data_for_Brighton.ipynb
-   notebooks/download_elevation_data_python.ipynb
+   notebooks/extra_materials/intro-to-python-geostack.ipynb
+   notebooks/extra_materials/popgrid_to_points.ipynb
+   notebooks/extra_materials/download_poi_data_for_Brighton.ipynb
+   notebooks/extra_materials/download_elevation_data_python.ipynb
 
 .. toctree::
    :maxdepth: 1
