@@ -39,6 +39,7 @@ dependencies:
   - r-codetools
   - r-data.table
   - r-devtools
+  - r-geojsonio
   - r-ggplot2
   - r-irkernel
   - r-lattice
