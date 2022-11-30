@@ -33,6 +33,8 @@ Contents
 .. toctree::
    :maxdepth: 1
    :caption: Basic information
+   :titlesonly:
+   :hidden:
 
    course-info/introduction
    course-info/installing-miniconda
@@ -51,6 +53,7 @@ Contents
    :caption: Demo
 
    notebooks/demo/r5py_demo.ipynb
+   notebooks/demo/r5r_demo.ipynb
 
 .. toctree::
    :maxdepth: 1
@@ -61,19 +64,17 @@ Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Extra materials
-
-   lessons/giscience-and-sustainable-mobility
-   lessons/git-basics
-   notebooks/extra_materials/intro-to-python-geostack.ipynb
-   notebooks/extra_materials/popgrid_to_points.ipynb
-   notebooks/extra_materials/download_poi_data_for_Brighton.ipynb
-   notebooks/extra_materials/download_elevation_data_python.ipynb
-
-.. toctree::
-   :maxdepth: 1
    :caption: Exercises
 
    exercises/exercise-1
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Extra materials
+   :titlesonly:
+   :hidden:
+
+   notebooks/r5r_advanced/index
+   notebooks/extra_materials/index
 
 
