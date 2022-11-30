@@ -22,24 +22,6 @@ Install Miniconda
 You can find the latest version of Miniconda for different operating systems in the `Miniconda dowload page <https://docs.conda.io/en/latest/miniconda.html>`__.
 Tips and tricks for Windows, macOS and Linux users below.
 
-Windows
-~~~~~~~~
-
-Visit the `Miniconda download page <https://docs.conda.io/en/latest/miniconda.html#windows-installers>`__ and download the latest
-**Miniconda3 Windows 64-bit** installer for Windows.
-
-.. figure:: img/miniconda-windows.png
-    :width: 600px
-    :align: center
-    :alt: Downloading the latest Miniconda for Windows
-
-Install Miniconda to your computer by double clicking the installer and install it into a directory you want (you might need admin rights).
-Install it to **local user** and use the default settings.
-
-After the installation is completed, test that the package manager ``conda`` works by
-`opening an ``Anaconda prompt (miniconda3)`` from the start menu,
-and running command ``conda --version``. If the command returns a version number of conda (e.g. ``conda 4.5.9``) everything is working correctly.
-
 macOS
 ~~~~~~~~
 Visit the `Miniconda download page <https://docs.conda.io/en/latest/miniconda.html#macosx-installers>`__ and download the latest
@@ -60,6 +42,40 @@ Install Miniconda 3 and add it to system path using Terminal:
     # Download and install miniconda
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     bash Miniconda3-latest-Linux-x86_64.sh
+
+    # Follow the instructions on screen and install the software (you can use default options for questions)
+
+Windows
+~~~~~~~~
+
+For this workshop (and otherwise), **we highly recommend installing Windows Subsystem for Linux (WSL)** and install the programming environment there.
+The computing environment used in our tutorials mixes Python, R and Java programming languages and getting them to work nicely together
+on Windows is...challenging (not impossible but installation troubles are likely).
+
+1. Hence, check whether you already have WSL installed on your computer by searching for "Ubuntu" in the Start Menu. If you have it, jump to Step 3.
+
+2. If you do not have WSL installed, install it by following these instructions: https://learn.microsoft.com/en-us/windows/wsl/install
+
+3. Once you have WSL working, install Miniconda using the Ubuntu terminal by following the instructions for Linux above.
+
+.. warning::
+
+    *Still want to try the "normal" way?* You can install Miniconda on Windows without issues but getting the libraries for this workshop to work properly can be tricky.
+
+    Visit the `Miniconda download page <https://docs.conda.io/en/latest/miniconda.html#windows-installers>`__ and download the latest
+    **Miniconda3 Windows 64-bit** installer for Windows.
+
+    .. figure:: img/miniconda-windows.png
+        :width: 600px
+        :align: center
+        :alt: Downloading the latest Miniconda for Windows
+
+    Install Miniconda to your computer by double clicking the installer and install it into a directory you want (you might need admin rights).
+    Install it to **local user** and use the default settings.
+
+    After the installation is completed, test that the package manager ``conda`` works by
+    `opening an ``Anaconda prompt (miniconda3)`` from the start menu,
+    and running command ``conda --version``. If the command returns a version number of conda (e.g. ``conda 4.5.9``) everything is working correctly.
 
 
 Install the programming environment
@@ -98,6 +114,8 @@ After installing `mamba`, the main steps for creating and using a conda environm
 1. create the environment from environment.yml file using mamba,
 2. activate the environment
 3. start using the environment (e.g. launch the JupyterLab and start coding, see below)
+
+**Windows users**: we recommend doing these installations using Windows Subsystem for Linux (WSL).
 
 We have prepared a ready-made environment file for this course (called ``environment.yml``). You can  `DOWNLOAD IT FROM HERE <https://github.com/r5py/r5edu/blob/main/ci/environment.yml>`__.
 After downloading the environment file, run the following commands on the same folder where you downloaded it.
@@ -138,8 +156,14 @@ Note, Jupyter Lab will probably prompt you to "Build" the installation in order 
     If you want to install some additional packages to your conda environment, ensure you have activated it (step 2 above) and
     install the package that you wish to install following the guidelines below.
 
-Install OpenJDK Java Development Kit
-------------------------------------
+Install OpenJDK Java Development Kit for Windows
+------------------------------------------------
+
+**These instructions only apply if**:
+  - you are on Windows AND 
+  - **not using Windows Subsystem for Linux**.
+
+This means that if you followed the recommendations above and use WSL, you don't need to do these steps.
 
 ``r5py`` and ``r5r`` libraries rely on Java JDK engine. Hence to get the libraries working, you need to install OpenJDK to your computer.
 Below are instructions how to do that.
@@ -161,16 +185,6 @@ On Windows, you need to do a bit of manual work to get OpenJDK working. Follow t
 10. Activate the ``r5`` environment by typing ``conda activate r5``
 11. Run command ``python -c "import r5py"``. If this does not produce any errors, everything works!
 
-Linux/Mac
-~~~~~~~~~
-
-On Linux and Mac, getting the OpenJDK working is slightly easier ...
-
-1. Activate the ``r5`` environment by typing ``conda activate r5`` in a terminal
-2. Install the ``openjdk`` by typing ``mamba install -c conda-forge openjdk=>17.0.3``
-3. Close the terminal. Open the terminal again.
-4. Activate the ``r5`` environment by typing ``conda activate r5``
-5. Run command ``python -c "import r5py"``. If this does not produce any errors, everything works!
 
 General guide for installing packages with Mamba/Conda
 ------------------------------------------------------
