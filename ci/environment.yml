@@ -41,6 +41,7 @@ dependencies:
   - r-devtools
   - r-geojsonio
   - r-ggplot2
+  - r-interp
   - r-irkernel
   - r-lattice
   - r-mapview
