@@ -40,7 +40,6 @@ dependencies:
   - r-data.table
   - r-devtools
   - r-ggplot2
-  - r-geojsonio
   - r-irkernel
   - r-lattice
   - r-mapview
