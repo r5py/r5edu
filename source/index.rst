@@ -1,4 +1,4 @@
-.. figure:: img/Sustainable_mobility_banner.png
+.. figure:: img/event_banner.png
 
 *Workshop*: **Open tools for large-scale spatial accessibility analysis in Python and R** deals with the use open-source tools in Python (r5py) and R (r5r) to study spatial
 accessibility in urban environments.
@@ -61,6 +61,7 @@ Contents
 
    notebooks/r5py_intro.ipynb
    notebooks/r5r_intro.ipynb
+   notebooks/spatial_network_analysis.ipynb
 
 .. toctree::
    :maxdepth: 1
