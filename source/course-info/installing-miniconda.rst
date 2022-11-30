@@ -57,15 +57,10 @@ Install Miniconda 3 and add it to system path using Terminal:
 
 .. code-block::
 
-    # Download and install miniconda (first
-    sudo wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-    sudo bash Miniconda3-latest-Linux-x86_64.sh
+    # Download and install miniconda
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    bash Miniconda3-latest-Linux-x86_64.sh
 
-    # Add miniconda installation permanently to PATH variable
-    nano ~/.bashrc
-
-    # Add following line at the end of the file and save (EDIT ACCORDING YOUR INSTALLATION PATH)
-    export PATH=$PATH:/PATH_TO_MINICONDA/miniconda3/bin:/PATH_TO_MINICONDA/miniconda3/lib/python3.8/site-packages
 
 Install the programming environment
 -----------------------------------
