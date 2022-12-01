@@ -38,9 +38,9 @@ Contents
 
    course-info/introduction
    course-info/installing-miniconda
-   course-info/literature
    course-info/License-terms
    course-info/attribution
+   .. course-info/literature
 
 .. toctree::
    :maxdepth: 1
@@ -64,7 +64,7 @@ Contents
    notebooks/spatial_network_analysis.ipynb
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Exercises
 
    exercises/exercise-1
