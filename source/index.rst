@@ -46,7 +46,8 @@ Contents
    :maxdepth: 1
    :caption: Presentations
 
-   .. lessons/giscience-and-sustainable-mobility
+   lessons/introduction
+   lessons/accessibility-modelling
 
 .. toctree::
    :maxdepth: 1
