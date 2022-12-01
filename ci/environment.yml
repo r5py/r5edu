@@ -46,6 +46,7 @@ dependencies:
   - r-lattice
   - r-mapview
   - r-osmdata
+  - r-patchwork
   - r-raster
   - r-rjava
   - r-sf
