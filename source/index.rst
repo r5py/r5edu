@@ -48,6 +48,7 @@ Contents
 
    lessons/introduction
    lessons/accessibility-modelling
+   lessons/r5r_advanced_features
 
 .. toctree::
    :maxdepth: 1
